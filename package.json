@@ -70,7 +70,7 @@
     "jest-react-native": "18.0.0",
     "lint-staged": "^13.2.2",
     "metro": "0.74.1",
-    "metro-babel-register": "0.74.1",
+    "metro-babel-register": "0.76.7",
     "metro-react-native-babel-preset": "0.74.1",
     "metro-react-native-babel-transformer": "0.74.1",
     "metro-resolver": "0.74.1",
