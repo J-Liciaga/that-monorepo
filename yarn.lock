@@ -179,6 +179,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.21.5.tgz#345f2377d05a720a4e5ecfa39cbf4474a4daed56"
   integrity sha512-0WDaIlXKOX/3KfBK/dwP1oQGiPh6rjMkT7HIRv7i5RR2VUMwrx5ZL0dwBkKx7+SW1zwNdgjHd34IMk5ZjTeHVg==
 
+"@babel/helper-plugin-utils@^7.22.5":
+  version "7.22.5"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.22.5.tgz#dd7ee3735e8a313b9f7b05a773d892e88e6d7295"
+  integrity sha512-uLls06UVKgFG9QD4OeFYLEGteMIAa5kpTPcFL28yuCIIzsf6ZyKZMllKVOCZFhiZ5ptnwX4mtKdWCBE/uT4amg==
+
 "@babel/helper-remap-async-to-generator@^7.18.9":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.18.9.tgz#997458a0e3357080e54e1d79ec347f8a8cd28519"
@@ -490,12 +495,19 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
-"@babel/plugin-syntax-flow@^7.0.0", "@babel/plugin-syntax-flow@^7.18.0", "@babel/plugin-syntax-flow@^7.18.6":
+"@babel/plugin-syntax-flow@^7.0.0", "@babel/plugin-syntax-flow@^7.18.0":
   version "7.21.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.21.4.tgz#3e37fca4f06d93567c1cd9b75156422e90a67107"
   integrity sha512-l9xd3N+XG4fZRxEP3vXdK6RW7vN1Uf5dxzRC/09wV86wqZ/YYQooBIGNsiRdfNR3/q2/5pPzV4B54J/9ctX5jw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.20.2"
+
+"@babel/plugin-syntax-flow@^7.12.1", "@babel/plugin-syntax-flow@^7.23.3":
+  version "7.23.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.23.3.tgz#084564e0f3cc21ea6c70c44cff984a1c0509729a"
+  integrity sha512-YZiAIpkJAwQXBJLIQbRFayR5c+gJ35Vcz3bg954k7cd73zqjvhacJuL9RbrzPz8qPmZdgqP6EUKwy0PCNhaaPA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.22.5"
 
 "@babel/plugin-syntax-import-assertions@^7.20.0":
   version "7.20.0"
@@ -671,13 +683,13 @@
     "@babel/helper-builder-binary-assignment-operator-visitor" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/plugin-transform-flow-strip-types@^7.0.0", "@babel/plugin-transform-flow-strip-types@^7.21.0":
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.21.0.tgz#6aeca0adcb81dc627c8986e770bfaa4d9812aff5"
-  integrity sha512-FlFA2Mj87a6sDkW4gfGrQQqwY/dLlBAyJa2dJEZ+FHXUVHBflO2wyKvg+OOEzXfrKYIa4HWl0mgmbCzt0cMb7w==
+"@babel/plugin-transform-flow-strip-types@^7.0.0", "@babel/plugin-transform-flow-strip-types@^7.20.0", "@babel/plugin-transform-flow-strip-types@^7.21.0":
+  version "7.23.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.23.3.tgz#cfa7ca159cc3306fab526fc67091556b51af26ff"
+  integrity sha512-26/pQTf9nQSNVJCrLB1IkHUKyPxR+lMrH2QDPG89+Znu9rAMbtrybdbWeE9bb7gzjmE5iXHEY+e0HUwM6Co93Q==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.20.2"
-    "@babel/plugin-syntax-flow" "^7.18.6"
+    "@babel/helper-plugin-utils" "^7.22.5"
+    "@babel/plugin-syntax-flow" "^7.23.3"
 
 "@babel/plugin-transform-for-of@^7.0.0", "@babel/plugin-transform-for-of@^7.21.5":
   version "7.21.5"
@@ -3444,10 +3456,24 @@ babel-plugin-replace-ts-export-assignment@^0.0.2:
   resolved "https://registry.yarnpkg.com/babel-plugin-replace-ts-export-assignment/-/babel-plugin-replace-ts-export-assignment-0.0.2.tgz#927a30ba303fcf271108980a8d4f80a693e1d53f"
   integrity sha512-BiTEG2Ro+O1spuheL5nB289y37FFmz0ISE6GjpNCG2JuA/WNcuEHSYw01+vN8quGf208sID3FnZFDwVyqX18YQ==
 
+babel-plugin-syntax-hermes-parser@0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-hermes-parser/-/babel-plugin-syntax-hermes-parser-0.18.0.tgz#d9bb20ccf4a570762161e01c3fcd53ee4270d687"
+  integrity sha512-6W1oSgLKyZM98dUsiu7uLyOcxv7P0gWcS6DPz2UXfhAF7eiogtrhkEV74jH8sAopPhADXNs9V/2UqS6gRih+Qg==
+  dependencies:
+    hermes-parser "0.18.0"
+
 babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha512-Xj9XuRuz3nTSbaTXWv3itLOcxyF4oPD8douBBmj7U9BBC6nEBYfyOJYQMf/8PJAFotC62UY5dFfIGEPr7WswzQ==
+
+babel-plugin-transform-flow-enums@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-flow-enums/-/babel-plugin-transform-flow-enums-0.0.2.tgz#d1d0cc9bdc799c850ca110d0ddc9f21b9ec3ef25"
+  integrity sha512-g4aaCrDDOsWjbm0PUUeVnkcVd6AKJsVc/MbnPhEotEpkeJQP6b8nzewohQi7+QS8UyPehOhGWn0nOwjvWpmMvQ==
+  dependencies:
+    "@babel/plugin-syntax-flow" "^7.12.1"
 
 babel-plugin-transform-typescript-metadata@^0.3.1:
   version "0.3.2"
@@ -6365,10 +6391,22 @@ he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
+hermes-estree@0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.18.0.tgz#6c202d8c78ddefadf3eb595a584dfa55b51a0508"
+  integrity sha512-WaIudIVKo5QWFqz1ta53HqSDuVxYST/MUuP9X7dqUpbHse3E2gzJq/7hEtgx84hh2XSNWN1AhYho3ThOA85uCA==
+
 hermes-estree@0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/hermes-estree/-/hermes-estree-0.8.0.tgz#530be27243ca49f008381c1f3e8b18fb26bf9ec0"
   integrity sha512-W6JDAOLZ5pMPMjEiQGLCXSSV7pIBEgRR5zGkxgmzGSXHOxqV5dC/M1Zevqpbm9TZDE5tu358qZf8Vkzmsc+u7Q==
+
+hermes-parser@0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/hermes-parser/-/hermes-parser-0.18.0.tgz#dd9878f70e9ca2570e7626181ae0465115f7f78d"
+  integrity sha512-DIIM6vsy30BU5hNkOXh6MR2r4ZAxVhbfyTnmfo/rqUf3KySlNWn9fWiOcpuGAdDN2o5sdPCpu6cep3a23d1Klw==
+  dependencies:
+    hermes-estree "0.18.0"
 
 hermes-parser@0.8.0:
   version "0.8.0"
@@ -8193,20 +8231,20 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==
 
-metro-babel-register@0.74.1:
-  version "0.74.1"
-  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.74.1.tgz#e41921c40bdd53f3e6ce27d342fb1dc5f8d4ca34"
-  integrity sha512-e/BgnWMVDh5wt2xGn/E+VATF55UHXz6gceMs4t/uCtdk/qD/Khz3auYvWBpv8k27xGqqTLu7FYUi0/MAtukhrQ==
+metro-babel-register@0.80.2:
+  version "0.80.2"
+  resolved "https://registry.yarnpkg.com/metro-babel-register/-/metro-babel-register-0.80.2.tgz#74ff600deb441274b38fdc85637da600830ade87"
+  integrity sha512-xpjDGVp+0NxdYbxkFawNf/9gVFua+mqYNpTJEBipdHs+8mGwjdc/kLYs1xul/MmKdJTGY3x1x8uDDOqnjUWFoQ==
   dependencies:
     "@babel/core" "^7.20.0"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
-    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
-    "@babel/plugin-syntax-class-properties" "^7.0.0"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/plugin-proposal-export-namespace-from" "^7.18.9"
+    "@babel/plugin-transform-flow-strip-types" "^7.20.0"
     "@babel/plugin-transform-modules-commonjs" "^7.0.0"
     "@babel/preset-typescript" "^7.18.0"
     "@babel/register" "^7.0.0"
     babel-plugin-replace-ts-export-assignment "^0.0.2"
+    babel-plugin-syntax-hermes-parser "0.18.0"
+    babel-plugin-transform-flow-enums "^0.0.2"
     escape-string-regexp "^1.0.5"
 
 metro-babel-transformer@0.73.9:
